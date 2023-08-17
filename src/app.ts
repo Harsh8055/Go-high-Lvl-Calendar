@@ -26,6 +26,8 @@ const setUpAndStartServer = async () => {
 
   server.listen(3000, async () => {
     console.log(`Server Started at 3000`);
+    
+
   });
 
 

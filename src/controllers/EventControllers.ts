@@ -25,6 +25,7 @@ const addNewEvent = async (req, res) => {
 
 const getAllEvents = async (req, res) => {
   try {
+    console.log("geting data");
     const response = await eventService.getAllEvents();
 
     return res.status(201).json({
