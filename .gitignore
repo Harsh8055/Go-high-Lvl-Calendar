@@ -1,0 +1,5 @@
+/node_modules
+/build
+.env
+.DS_Store
+genuine-segment-326718-485735d33a0e.json
