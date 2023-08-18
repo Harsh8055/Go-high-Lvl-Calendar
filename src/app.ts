@@ -24,9 +24,9 @@ const setUpAndStartServer = async () => {
   await connect();
   const server = http.createServer(app);
 
-  server.listen(3000, async () => {
+  server.listen(3002, async () => {
     console.log(`Server Started at 3000`);
-    
+
 
   });
 
