@@ -10,5 +10,7 @@ router.get("/get-all-events", EventControllers.getAllEvents);
 
 router.post("/add", EventControllers.addNewEvent);
 
+router.get("/get-free-slot", EventControllers.getFreeSlot);
+
 
 export default router;

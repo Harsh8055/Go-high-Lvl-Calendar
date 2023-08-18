@@ -2,9 +2,9 @@ import EventService from "../services/eventService";
 
 const eventService = new EventService();
 
-const addNewEvent = async (req, res) => {
+const addNewEvent = async (req: any, res: any) => {
   try {
-    const response = await eventService.addNewEvent(req.body);
+    const response = await eventService.addNewEvent(new Date());
     // console.log("1", 1);
     return res.status(201).json({
       success: true,
@@ -43,12 +43,36 @@ const getAllEvents = async (req, res) => {
     });
   }
 };
+const getFreeSlot = async (req: any, res: any) => {
+  try {
+    console.log("geting data");
+    const response = await eventService.getFreeSlot(new Date(), "Asia/Kolkata");
+    return res.status(201).json({
+      message: "Successfully fetched events ",
+      data: response,
+      err: {},
+      success: true,
+    });
+  } catch (error) {
+    console.log("error", error);
+    return res.status(500).json({
+      message: "Not able to fetch events",
+      err: error,
+      success: false,
+      data: {},
+    });
+  }
+};
+
+
+
 
 
 
 const userController = {
   addNewEvent,
-  getAllEvents
+  getAllEvents,
+  getFreeSlot,
 };
 
 export default userController;

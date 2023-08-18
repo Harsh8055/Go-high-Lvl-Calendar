@@ -27,6 +27,15 @@ class eventService {
       throw error;
     }
   }
+  async getFreeSlot(date,timezone) {
+    try {
+      const user = await this.eventRepository.getFreeSlot(date,timezone);
+      return user;
+    } catch (error) {
+      console.log("Something went wrong Service layer.", error);
+      throw error;
+    }
+  }
 
 
  
