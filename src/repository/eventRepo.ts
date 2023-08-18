@@ -68,7 +68,7 @@ class EventRepository {
     console.log("freeSlotsOfAUser", freeSlotsOfAUser);
   }
 
-  getFreeSlotsOfAUser(date: Date, resultTimeZone: String) {
+  private getFreeSlotsOfAUser(date: Date, resultTimeZone: String) {
     const availableSlots: any = [];
     const availableSlotsInRequestedTimeZone: any = [];
     const selectedDate = moment.tz(date, this.timeZoneUser);
