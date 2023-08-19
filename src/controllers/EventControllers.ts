@@ -4,7 +4,7 @@ const eventService = new EventService();
 
 const addNewEvent = async (req: any, res: any) => {
   try {
-    const response = await eventService.addNewEvent(new Date());
+    const response = await eventService.addNewEvent(req.body);
     // console.log("1", 1);
     return res.status(201).json({
       success: true,
