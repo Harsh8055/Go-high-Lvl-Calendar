@@ -1,5 +1,5 @@
 # Event Management API
-
+https://www.loom.com/share/4b1079bd9afd45d28c52058d624dc2d0?sid=dc8e7ee0-4138-4a1c-9601-691b0fd9ecf7
 ## API Endpoints
 
 1. **Get All Events**

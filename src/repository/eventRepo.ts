@@ -95,6 +95,8 @@ class EventRepository {
       "freeSlotsOfAUserAfterRemovingEvents",
       freeSlotsOfAUserAfterRemovingEvents
     );
+
+    return freeSlotsOfAUserAfterRemovingEvents;
   }
 
   private getFreeSlotsOfAUser(date: Date, resultTimeZone: String) {
@@ -210,7 +212,7 @@ class EventRepository {
           }
         }
 
-        
+
       });
     });
 
