@@ -57,19 +57,17 @@ class EventRepository {
     }
   }
 
-  async getFreeSlot(req) {
-    // let { date, timezone } = req.body;
-    let date, timezone;
+  async getFreeSlot(date, timezone) {
 
-    const apiResponse = {
-      eventDate: "2023-08-20T00:00",
-      // timezone to london
-      timezone: "Europe/London",
-      // timezone: "Asia/Kolkata"
-    };
+    // const apiResponse = {
+    //   eventDate: "2023-08-20T00:00",
+    //   // timezone to london
+    //   timezone: "Europe/London",
+    //   // timezone: "Asia/Kolkata"
+    // };
 
-    date = apiResponse.eventDate;
-    timezone = apiResponse.timezone;
+    // date = apiResponse.eventDate;
+    // timezone = apiResponse.timezone;
 
     // get all the events from db
 

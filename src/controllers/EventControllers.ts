@@ -46,7 +46,7 @@ const getAllEvents = async (req, res) => {
 const getFreeSlot = async (req: any, res: any) => {
   try {
     console.log("geting data");
-    const response = await eventService.getFreeSlot(new Date(), "Asia/Kolkata");
+    const response = await eventService.getFreeSlot(req.body.date,req.body.timezone);
     return res.status(201).json({
       message: "Successfully fetched events ",
       data: response,
